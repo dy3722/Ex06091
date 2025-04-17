@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void go(View view) {
+        url = et.getText().toString();
+        wv.loadUrl(url);
     }
 
     private class MyWebViewClient extends WebViewClient {
